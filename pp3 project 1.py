@@ -20,3 +20,14 @@ Hello, World!
 Hello, World!
 what is your name? Kaviyukan
 Hello  Kaviyukan
+>>> age=13
+>>> print(age)
+13
+>>> weight=45
+>>> print (weight)
+45
+>>> height=129cm
+SyntaxError: invalid decimal literal
+>>> height=100
+>>> print (height)
+100
