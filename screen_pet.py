@@ -43,11 +43,11 @@ c.pack()
 root.after(1000, blink)
 def show_happy(event):
     if (20 <= event.x <= 350) and (20 <= event.y <= 350):
-        c.itemconfigure(cheek_left, state=HIDDEN)
-        c.itemconfugure(cheek_right, stste=HIDDEN)
-        c.itemconfigure(mouth_happy, state=HIDDEN)
-        c.itemconfigure(mouth_normal, state=NORMAL)
-        c.itemconfigure(mouth_sad, state=HIDDEN)
+        c.itemconfigure(cheek_left, state=NORMAL)
+        c.itemconfugure(cheek_right, stste=NORMAL)
+        c.itemconfigure(mouth_happy, state=NORMAL)
+        c.itemconfigure(mouth_normal, state=HIDDEN)
+        c.itemconfigure(mouth_sad, state=NORMAL)
         return
     def hide_happy(event):
         c.itemconfigure(cheek_left, state=HIDDEN)
