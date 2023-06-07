@@ -56,6 +56,6 @@ def show_happy(event):
         c.itemconfigure(mouth_normal, state=NORMAL)
         c.itemconfigure(mouth_sad, state=HIDDEN)
         return
-    c.blind('<Motion>',show_happy)
-    c.bind('Leave>',hide_happy)
+    c.blind('<Motion>', show_happy)
+    c.bind('Leave>', hide_happy)
     root.mainloop()
