@@ -5,6 +5,7 @@ colors = cycle(['red', 'orange', 'yellow', 'green', 'blue', 'purple'])
 
 def draw_circle(size,angle,shift):
     turtle.bgcolor(next(colors))
+    turtle.pencolor(next(colors))
     turtle.circle(size)
     turtle.right(angle)
     turtle.forward(shift)
