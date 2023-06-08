@@ -34,7 +34,7 @@ pupil_right = c.create_oval(240,145, 250, 155, outline='black',fill='black')
 mouth_normal = c.create_line(170, 250, 200, 272, 230, 250, smooth=1, width=2, state=NORMAL)
 
 mouth_happy = c.create_line(170, 250, 200, 282, 230, 250, smooth=1, width=2, state=HIDDEN)
-mouth_sad = c. create_line(170, 250, 200, 232, 230, 250, smooth=1, width=2, state=HIDDEN)
+mouth_sad = c.create_line(170, 250, 200, 232, 230, 250, smooth=1, width=2, state=HIDDEN)
 cheek_left = c.create_oval(70, 180, 120, 230, outline='pink', fill='pink', state=HIDDEN)
 cheek_right = c.create_oval(280, 180, 330, 230, outline='pink',fill='pink', state=HIDDEN)
 
@@ -47,7 +47,7 @@ def show_happy(event):
         c.itemconfugure(cheek_right, stste=NORMAL)
         c.itemconfigure(mouth_happy, state=NORMAL)
         c.itemconfigure(mouth_normal, state=HIDDEN)
-        c.itemconfigure(mouth_sad, state=NORMAL)
+        c.itemconfigure(mouth_sad, state=HIDDEN)
         return
     def hide_happy(event):
         c.itemconfigure(cheek_left, state=HIDDEN)
@@ -57,5 +57,5 @@ def show_happy(event):
         c.itemconfigure(mouth_sad, state=HIDDEN)
         return
     c.blind('<Motion>', show_happy)
-    c.bind('Leave>', hide_happy)
+    c.bind('<Leave>', hide_happy)
     root.mainloop()
